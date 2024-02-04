@@ -1,0 +1,94 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins";
+@use "sass:math";
+
+
+nav {
+    @extend %section;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 25%;
+    overflow: auto;
+
+    @include mixins.tablet-styles {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: initial;
+        width: 100%
+    }
+
+    .inner {
+        @extend %wrap;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        & > * :last-child {
+            margin-bottom: 0;
+        }
+
+        .copyright {
+            @include mixins.tablet-styles {
+                display: none;
+            }
+        }
+                
+        .nav-bar {  
+            @include mixins.tablet-styles {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+    
+            .logo {
+                display: block;
+                margin-bottom: (var.$gutter-base * 2);
+    
+                @include mixins.tablet-styles {
+                    margin-bottom: 0;
+                }
+            }
+    
+            ul {
+                list-style-type: none;
+                padding-left: 0;
+                margin-bottom: 0;
+    
+                @include mixins.tablet-styles {
+                    display: none;
+                }
+    
+    
+                li {
+                    &:not(:last-child) {
+                        margin-bottom: math.div(var.$gutter-base, 2);
+                    }
+    
+                    a {
+                        text-decoration: none;
+                        color: var.$text-color-base;
+                    }
+                }
+            }
+    
+            
+            .responsive-nav {
+                display: none;
+                text-align: center;
+                border: 2px solid var.$text-color-secondary;
+                width: (var.$font-size-big * 1.5);
+                font-size: var.$font-size-big;
+                color: var.$text-color-secondary;
+    
+                @include mixins.tablet-styles {
+                    display: block;
+                }
+            }
+        }
+    }
+}

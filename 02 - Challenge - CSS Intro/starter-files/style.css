@@ -1,0 +1,215 @@
+/* resolution 1536x753.6px*/
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    color: white;
+    background-color: rgba(39, 40, 51, 1);
+}
+  
+img {
+    max-width: 100%;
+}
+h1,
+h2,
+h3,
+p,
+ul,
+ol {
+    margin-top: 0;
+}
+.height {
+    min-height: 100vh;
+}
+.float-right {
+    float: right;
+}
+.position-relative {
+    position: relative;
+}
+.flex {
+    display: flex;
+}
+.text-justify {
+    text-align: justify;
+}
+.font-size-20 {
+    font-size: 20px;
+}
+.line-height-25 {
+    line-height: 25px;
+}
+.line-height-35 {
+    line-height: 35px;
+}
+.text-center {
+    text-align: center;
+}
+.font-bold {
+    font-weight: bold;
+}
+.a-learn-more {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: transparent;
+    padding: 10px 30px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+.section-one header a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 7px;
+}
+.section-one header ul li {
+    display: inline-block;
+    margin-left: 10px;
+}
+header {
+    padding: 20px;
+}
+.section-one header ul li:last-child {
+    background-color: #e44c65;
+    border-radius: 5px;
+}
+.section-one > a {
+    color: #bebec1;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 40px;
+    font-size: 35px;
+}
+.position-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.section-two {
+    background:linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url('./images/picture1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.section-two .inner {
+    padding: 70px 0px 35px;
+    position: absolute;
+    bottom: 0px;
+    background-color: rgba(39, 40, 51, .85);
+    border-top: 5px solid #e44c65;
+}
+.section-two .inner div {
+    width: 33.333%;
+    padding: 0px 25px;
+}
+.section-three {
+    background:linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url('./images/picture2.jpeg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+.section-three .inner{
+    background-color: rgba(39, 40, 51, .85);
+    display: inline-block;
+    width: 35%;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    padding: 100px 40px 0px;
+    border-left: 5px solid rgb(93, 93, 238);
+}
+.section-four {
+    background:linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url('./images/picture3.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+.section-four .inner{
+    background-color: rgba(39, 40, 51, .85);
+    display: inline-block;
+    width: 35%;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    top: 0px;
+    padding: 100px 40px 0px;
+    border-right: 5px solid rgb(45, 212, 81);
+}
+.card {
+    flex-basis: 33.333%;
+    padding: 50px;
+}
+.icons {
+    font-size: 30px;
+    background-color: rgba(255, 255, 255, .1);
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.icons i {
+    margin-top: 25px;
+}
+.border-top {
+    border-top: 3px solid #e44c65;
+}.section-five .inner {
+    padding: 60px 0px;
+}
+.section-six {
+    background-color: #e44c65;
+    padding: 80px 0;
+    margin: 50px 0;
+}
+.section-six form input {
+    background-color: transparent;
+    border:1px solid rgba(255, 255, 255, 0.233);
+    border-radius: 5px;
+    padding: 10px 45px 10px 10px;
+}
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #e44c65;
+    cursor: pointer;
+}
+.section-six form input::placeholder {
+    color: rgba(255, 255, 255, 0.699);
+} 
+.section-seven a{
+    color: white;
+}
+.section-seven {
+    padding: 60px 0;
+}
+.link-icons {
+    font-size: 35px;
+    margin: 20px 10px;
+}
+.div-icons {
+    margin-bottom: 20px;
+}
+.rights p {
+    display: inline-block;
+}
+.rights :first-child {
+    border-right: 1px solid white;
+    padding-right: 5px;
+}
+.a-learn-more:hover {
+    border: 2px solid rgb(47, 193, 250);
+}
+input:focus {
+    outline-color: rgb(47, 193, 250);
+    border-radius: 5px;
+}
+
+
+
+
+
+

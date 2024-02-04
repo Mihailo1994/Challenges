@@ -1,0 +1,70 @@
+@use "sass:math";
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix; 
+
+.work {
+    @extend %section;
+
+    .inner {
+        @extend %wrap;
+
+        .text{
+            @include mix.description-text;
+            margin-bottom: (var.$gutter-base * 2);
+
+            @include mix.tablet-styles {
+                margin-bottom: var.$gutter-base;
+            }
+
+
+            h2 {
+                text-transform: capitalize;
+            }
+
+            hr {
+                @extend %hr-line;
+            }
+        }
+
+        .img-grid {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: -(math.div(var.$gutter-base, 2));
+            margin-right: -(math.div(var.$gutter-base, 2));
+
+            @include mix.tablet-styles {
+                margin-right: 0;
+            }
+            
+            .img-one {
+                @include mix.bg-images('../images/coast.jpg');
+            }
+
+            .img-two {
+                @include mix.bg-images('../images/island.jpg');
+            }
+
+            .img-three {
+                @include mix.bg-images('../images/balloon.jpg');
+            }
+
+            .img-four {
+                @include mix.bg-images('../images/mountain.jpg');
+            }
+
+            .flex-40 {
+                flex: 0 1 40%;    
+                @include mix.tablet-styles {
+                    flex: 0 1 100%;
+                }
+            }
+
+            .flex-60 {
+                flex: 0 1 60%;
+                @include mix.tablet-styles {
+                    flex: 0 1 100%;
+                }
+            }
+        }
+    }
+}

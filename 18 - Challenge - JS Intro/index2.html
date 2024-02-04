@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>Numbers from 10 to 100 that are even and divisible by 3 are :</p>
+        <ul>
+            
+        </ul>
+    </div>
+    <script>
+        
+        let number1 = 10;
+        let number2 = 100;
+        let ulList = document.querySelector('ul');
+        let array = [];
+        for (let i = number1; i <= number2; i++ ) {
+            if (i % 3 == 0 && i % 2 == 0) {
+                array.push(i);
+            }
+        }
+        // console.log(array)
+        for (let i = 0; i < array.length; i++) {
+            let liElement = document.createElement('li');
+            liElement.innerText = array[i];
+            ulList.appendChild(liElement);
+        }
+
+    </script>
+</body>
+</html>

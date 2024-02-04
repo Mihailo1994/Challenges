@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p id="smallest"></p>
+        <p id="largest"></p>
+    </div>
+    <script>
+        
+        let number1 = prompt("Enter first number");
+        let number2 = prompt("Enter secound number");
+        let number3 = prompt("Enter third number");
+
+        
+        let largest = Math.max(number1, number2, number3);
+        let smallest = Math.min(number1, number2, number3);
+
+        let primeSmallest = "";
+        let primeLargest = "";
+
+        for (let i = 2; i < smallest; i++) {
+            if (smallest % i == 0) {
+                primeSmallest = "is not prime";
+                break;
+            } else {
+                primeSmallest = "is prime";
+            }
+        }
+
+        
+
+        for (let i = 2; i < largest; i++) {
+            if (largest % i == 0) {
+                primeLargest = "is not prime";
+                break;
+            } else {
+                primeLargest = "is prime";
+            }
+        }
+
+        let pSmallest = document.querySelector('#smallest');
+        let pLargest = document.querySelector('#largest');
+
+        pSmallest.innerText = `The smallest number ${smallest} ${primeSmallest}`;
+        pLargest.innerText = `The largest number ${largest} ${primeLargest}`;
+
+        console.log("smallest", smallest);
+        console.log("largest", largest);
+
+        let n = 45;
+            if (n % 2 === 0) {
+            console.log(n + " is even");
+            } else {
+            console.log(n + " is odd");
+            }
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+@use "sass:math";
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix; 
+
+
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/hero.jpg');
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var.$text-color-primary;
+    position: relative;
+
+    .inner {
+        @extend %wrap;
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding-top: math.div(var.$gutter-base, 2);
+
+            @include mix.mobile-l-styles {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            a {
+                text-decoration: none;
+                color: var.$text-color-primary;
+            }
+
+            .logo {
+                font-size: var.$font-size-large;
+
+                @include mix.mobile-l-styles {
+                    margin-bottom: math.div(var.$gutter-base, 5);
+                }
+            }
+
+            ul {
+                margin-bottom: 0;
+                padding-left: 0;
+
+                li {
+                    display: inline-block;
+
+                    &:not(:last-child) {
+                        margin-right: math.div(var.$gutter-base, 2);
+                    }
+                }
+            }
+        }
+
+        .banner-text {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            & *:not(:last-child) {
+                margin-bottom: math.div(var.$gutter-base, 2);
+            }
+
+            p {
+                font-size: var.$font-size-large;
+            }
+        }
+    }
+}

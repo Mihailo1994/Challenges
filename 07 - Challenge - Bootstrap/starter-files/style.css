@@ -1,0 +1,35 @@
+body {
+    padding-top: 56px;
+}
+
+.bg-image {
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url('./images/home.jpg');
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.banner {
+    height: calc(100vh - 56px);
+}
+
+.icon-large {
+    font-size: 24px;
+}
+
+.icon-small {
+    font-size: 20px;
+}
+
+.btn:hover {
+    background-color: white !important;
+    color: black !important;
+}
+
+img {
+    max-width: 100%;
+}
+
+.bg-btn {
+    background-color: #007bff !important;
+}

@@ -1,0 +1,136 @@
+/* resolution 1536x753.6px*/
+
+body {
+    margin: 0;
+    background-color: #638caa;
+    color: white;
+}
+img {
+    max-width: 100%;
+}
+  
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol {
+    margin-top: 0;
+}
+header {
+    width: 90%;
+    margin: 10px auto;
+}
+header img{
+    width: 25px;
+}
+.navigation-bar {
+    margin: 10px 0px;
+    float: right;
+}
+.navigation-bar li {
+    display: inline-block;
+    padding: 0px 10px;
+}
+.navigation-bar li a{
+    text-decoration: none;
+    color: white;
+}
+body > img {
+    display: block;
+    margin: 30px auto;  
+}
+.disp-flex {
+    display: flex;
+}
+.products div {
+    text-align: center;
+    display: inline-block;
+    width: 25%;
+    margin: 0px;
+}
+.bg-color-lightbrown {
+    background-color: #dbdbdb;
+}
+.bg-color-brown {
+    background-color: #bcb9aa;
+}
+.bg-color-lightblue {
+    background-color: #9ce0d1;
+}
+.bg-color-purple {
+    background-color: #9aa7b8af;
+}
+.bg-color-lightpurple {
+    background-color: #b7ced6;
+}
+.macbook .description {
+    background-color: #f09e84;
+}
+.symbol {
+    color: black;
+    font-size: 3rem;
+    margin: 15px 0 5px;
+}
+.caption {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 0px;
+}
+.ipad div,
+.iphone div,
+.macbook div {
+    width: 50%;
+}
+.product-image img {
+    display: block;
+    width: 250px;
+    margin: 20px auto;
+}
+.description h2{
+    text-align: center;
+    margin-top: 40px;
+}
+.description p{
+    text-align: justify;
+    text-indent: 20px;
+    margin: 50px 40px;
+    line-height: 1.5rem;
+    font-size: 1.13rem;
+}
+.info div {
+    text-align: center;
+    width: 33.333%;
+}
+.info div h2 {
+    color: black;
+    margin: 20px auto 20px;
+}
+.info div p {
+    margin: 30px auto 30px;
+}
+.contact {
+    text-align: center;
+}
+.contact ul li{
+    font-size: 2rem;
+    display: inline-block;
+    margin: 40px 80px;
+}
+.contact ul li a{
+    color: white;
+}
+footer {
+    background-color: #514354;
+    text-align: center;
+}
+footer p {
+    margin: 0px;
+    padding: 30px;
+}
+.navigation-bar a:hover {
+    color: red;
+    text-decoration: underline;
+}

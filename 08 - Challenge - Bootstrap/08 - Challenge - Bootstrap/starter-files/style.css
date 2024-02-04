@@ -1,0 +1,80 @@
+.row > * :last-child {
+    margin-bottom: 0;
+}
+
+.active-border {
+    border-left: 2px solid white;
+}
+
+.position-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: auto;
+}
+
+.icon-size {
+    font-size: 2rem;
+}
+
+.banner-height {
+ height: 65vh;
+}
+
+.bg-banner-img1 {
+    background: url('./images/image1.jpg') no-repeat top/cover;
+}
+
+.bg-banner-img2 {
+    background: url('./images/image2.jpg') no-repeat top/cover;
+}
+
+.bg-banner-img3 {
+    background: url('./images/image3.jpg') no-repeat top/cover;
+}
+
+.bg-img1 {
+    background-image: url('./images/lights.jpg');
+}
+
+.bg-img2 {
+    background-image: url('./images/media.jpg');
+    background-color: rgb(136, 136, 136);
+    background-blend-mode: multiply;    
+}
+
+.bg-fixed {
+    background-attachment: fixed;
+}
+
+.modal-button {
+    border: none;
+    padding: 0;
+}
+
+.aboutus-img-width {
+    width: 400px;
+}
+
+.aboutus-img-position {
+    margin-top: -6rem;
+}
+
+.height-150 {
+    min-height: 150px;
+}
+
+
+@media (max-width:768px) {
+    .navbar {
+        padding-left: 0;
+    }
+
+    .navbar-brand,
+    .nav-item {
+        padding-left: 1rem;
+    }
+
+}
+

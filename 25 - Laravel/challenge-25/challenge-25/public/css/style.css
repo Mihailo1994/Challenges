@@ -1,0 +1,7 @@
+.min-height {
+    min-height: calc(100vh - 56px);
+}
+
+.bg-grey {
+    background-color: #f8fafc;
+}

@@ -1,0 +1,40 @@
+@use "../abstracts/variables" as var;
+@use "sass:math";
+
+html {
+  font-size: var.$font-size-base;
+}
+
+body {
+  font-family: var.$font-family-base;
+  font-weight: var.$font-weight-normal;
+  line-height: var.$line-height-base;
+  color: var.$text-color-base;
+}
+
+h1 {
+  font-size: var.$heading-size-base;
+}
+
+h2 {
+  font-size: var.$heading-size-small;
+}
+
+h3 {
+  font-size: var.$font-size-medium;
+}
+
+.btn {
+  text-transform: uppercase;
+  color: var.$text-color-primary;
+  background-color: var.$text-color-secondary;
+  font-weight: var.$font-weight-bold;
+  border: none;
+  border-radius: 3px;
+  padding: math.div(var.$gutter-base, 3) math.div(var.$gutter-base, 1.5);
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(90%);
+  }
+}

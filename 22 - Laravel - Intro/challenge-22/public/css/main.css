@@ -1,0 +1,50 @@
+body {
+    padding-bottom: 56px;
+}
+
+
+.bg-brown {
+    background-color: rgb(71, 37, 37);
+}
+
+.bg-image {
+    min-height: calc(100vh - 56px);
+    background-image: url('/img/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-part {
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+}
+
+.img-part img {
+    width: 700px;
+}
+
+.text-part {
+    width: 40%;
+    background-color: rgb(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 5px;
+    top: 15%;
+    left: 10%;
+}
+
+.container-part {
+    min-height: 80vh;
+}
+
+.div-btn {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
